@@ -3,10 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rpaparon < rpaparon@student.42madrid.fr    +#+  +:+       +#+        */
+/*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 16:03:35 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/25 16:58:26 by rpaparon         ###   ########.fr       */
+/*   Created: 2024/09/25 17:10:49 by rpaparon          #+#    #+#             */
+/*   Updated: 2024/09/25 18:08:44 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int	ft_isalnum(int c)
+{
+	return((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
+}
