@@ -6,12 +6,20 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:25 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:26:40 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/26 14:50:05 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
-	
+	if (c >= 65 && c <= 90)
+	{
+		return (c + 32);
+	}
+	else
+	{
+		return (c);
+	}
 }

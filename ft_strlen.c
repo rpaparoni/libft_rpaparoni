@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:05 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:28:14 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/26 14:51:09 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 int ft_strlen(const char *s)
 {
-	
+	int i;
+
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+	return (i);
 }

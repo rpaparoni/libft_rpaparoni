@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:30 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:26:18 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/26 14:50:25 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 int	ft_toupper(int c)
 {
-	
+	if (c >= 97 && c <= 122)
+	{
+		return (c - 32);
+	}
+	else
+	{
+		return (c);
+	}
 }

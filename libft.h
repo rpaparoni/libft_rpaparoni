@@ -6,9 +6,10 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:34:34 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/26 13:36:25 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
