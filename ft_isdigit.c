@@ -6,10 +6,11 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:53:19 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/25 18:08:36 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/26 11:47:01 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int ft_isdigit(int c)
 {

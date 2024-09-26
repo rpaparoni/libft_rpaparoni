@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 17:10:49 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:10:35 by rpaparon         ###   ########.fr       */
+/*   Created: 2024/09/26 12:02:14 by rpaparon          #+#    #+#             */
+/*   Updated: 2024/09/26 12:34:11 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int ft_strnstr(const char *haystack, const char *needle, int len)
 {
-	return((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57));
+	
 }
