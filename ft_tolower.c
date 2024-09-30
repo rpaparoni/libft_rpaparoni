@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:25 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 14:50:05 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/30 14:48:12 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,11 @@ int	ft_tolower(int c)
 		return (c);
 	}
 }
+/*
+int main()
+{
+	int result = ft_tolower('A');
+	char c = result;
+	write(1, &c, 1);
+}
+*/
