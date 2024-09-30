@@ -6,13 +6,13 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:19 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:27:13 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:39:47 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strrchr(const char *s, int c)
+char *ft_strrchr(const char *s, int c)
 {
 	
 }
