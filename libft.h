@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 13:36:25 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:29:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
 int ft_atoi(const char *str);
-int ft_strlen(const char *s);
+size_t ft_strlen(const char *s);
 int ft_strlcpy(char *dst, const char *src, int dstsize);
 int ft_strlcat(char *dst, const char *src, int dstsize);
 int ft_strchr(const char *s, int c);
