@@ -6,12 +6,12 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:05 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/30 17:36:34 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/01 14:30:34 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
+#include <stddef.h>
 
 size_t	ft_strlen(const char *str)
 {
@@ -46,7 +46,7 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int main(void){
+int	main(void){
 
 	char str[]= "bon";
 	size_t len = ft_strlen(str);

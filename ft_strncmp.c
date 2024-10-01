@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:10 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:31:09 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/01 14:36:39 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 ft_strncmp(const char *s1, const char *s2, int n)
 {
-	
 }
