@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:24 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 12:32:09 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:58:42 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,29 @@
 
 int ft_memcpy(void *dst, const void *src, int n)
 {
-	
+	unsigned char	*ptr_dst;
+	unsigned char	*ptr_src;
+	int				i;
+
+	ptr_dst = (unsigned char *)dst;
+	ptr_src = (unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		ptr_dst[i] = ptr_src[i];
+		i++;
+	}
+	return (0);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+	char *src = "hola wapo";
+	char dst[10];
+	int n = 10;
+	ft_memcpy(dst, src, n);
+	printf("%s\n", dst);
+	return (0);
 }

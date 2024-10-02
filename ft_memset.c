@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:36 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/01 14:53:39 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:20:53 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	ft_memset(void *b, int c, int len)
 	}
 	return (0);
 }
+/*
 int	main(void)
 {
 	char buffer1[20]; // Crear un buffer de 20 bytes
@@ -36,4 +37,4 @@ int	main(void)
 	// Mostrar el resultado de ft_memset
 	printf("Resultado de ft_memset: %s\n", buffer1);
 	return (0);
-}
+}*/
