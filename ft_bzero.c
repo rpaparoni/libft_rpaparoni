@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:05 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 15:06:39 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/02 15:57:06 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,14 @@ int ft_bzero(void *s, int n)
 	}
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char s[] = "hola wapo";
+	int n = 10;
+	ft_bzero(s, n);
+	printf("%d\n", *s);
+	return (0);
+}*/
