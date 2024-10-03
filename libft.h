@@ -6,12 +6,12 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/01 14:53:57 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/03 13:43:52 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # define LIBFT_H
-#include <stddef.h>
+#include <unistd.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
