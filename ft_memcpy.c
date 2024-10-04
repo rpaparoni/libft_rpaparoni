@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:24 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/02 14:58:42 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:33:19 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int ft_memcpy(void *dst, const void *src, int n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
@@ -39,4 +39,4 @@ int main(void)
 	ft_memcpy(dst, src, n);
 	printf("%s\n", dst);
 	return (0);
-}
+}*/
