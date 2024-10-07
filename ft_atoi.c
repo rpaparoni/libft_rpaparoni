@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:00:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/26 17:37:36 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:14:08 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,10 @@ int ft_atoi(const char *str)
 		str++;
 	}
 	return (result);
+}
+#include <stdio.h>
+
+int main ()
+{
+	printf("%d\n",ft_atoi("      -42"));
 }
