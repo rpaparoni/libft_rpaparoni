@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:21 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/03 17:32:36 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:19:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int ft_memchr(const void *s, int c, int n)
 	}
 	return (0);
 }
-
+/*
 #include <unistd.h>	
 
 int	main(void)
@@ -38,4 +38,4 @@ int	main(void)
 	int result = ft_memchr(s, c, n) + '0';
 	write(1, &result, 1);
 	return (0);
-}
+}*/
