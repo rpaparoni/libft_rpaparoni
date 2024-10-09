@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:19 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/04 14:05:37 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:40:55 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strrchr(const char *str, int c)
 		}
 		i--;
 	}
-	return (NULL);
+	return (0);
 }
 
 /*
