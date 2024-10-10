@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:01 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/04 16:32:24 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:58:10 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ ft_strlcpy(char *dst, const char *src, int dstsize)
 	return (ft_strlen(src));
 }
 
-/*
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -53,4 +53,4 @@ int	main(void)
 	char dst[10];
 	int result = ft_strlcpy(dst, src, 5);
 	ft_putnbr(result);
-}*/
+}

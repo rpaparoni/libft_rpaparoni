@@ -6,18 +6,19 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:00:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/07 17:14:08 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:09:33 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int result;
+	int	result;
 
 	result = 0;
-	while (*str == ' '){
+	while (*str == ' ')
+	{
 		str++;
 	}
 	if (*str == '-')
@@ -39,7 +40,7 @@ int ft_atoi(const char *str)
 }
 #include <stdio.h>
 
-int main ()
+int	main(void)
 {
-	printf("%d\n",ft_atoi("      -42"));
+	printf("%d\n", ft_atoi("      --42"));
 }
