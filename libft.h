@@ -6,13 +6,16 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/09 15:10:09 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:38:34 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# define LIBFT_H
+#ifndef LIBFT_H
+#define LIBFT_H
+
 #include <unistd.h>
-#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -35,3 +38,6 @@ int		ft_memmove(void *dst, const void *src, int len);
 int		ft_memchr(const void *s, int c, int n);
 int		ft_memcmp(const void *s1, const void *s2, int n);
 int		ft_strnstr(const char *haystack, const char *needle, int len);
+void	*ft_calloc(size_t count, size_t size);
+
+#endif

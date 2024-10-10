@@ -1,39 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 12:01:05 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/10 15:09:50 by rpaparon         ###   ########.fr       */
+/*   Created: 2024/10/10 14:54:53 by rpaparon          #+#    #+#             */
+/*   Updated: 2024/10/10 16:35:58 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-int ft_bzero(void *s, int n)
+void *ft_calloc(size_t count, size_t size)
 {
-	int i;
-	char *ptr;
+	void	*ptr;
 
-	i = 0;
-	ptr = (char *)s;
-	while (i < n)
-	{
-		ptr[i] = 0;
-		i++;
-	}
-	return (0);
+	ptr = malloc(count * size);
+	if (ptr == NULL)
+		return (ptr);
+	ft_bzero(ptr, count * size);
+	return (ptr);
 }
-/*
+
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-	char s[] = "hola wapo";
-	int n = 10;
-	ft_bzero(s, n);
-	printf("%d\n", *s);
+	int	*arr;
+	int	i;
+
+	arr = ft_calloc(5, sizeof(int));
+	if (!arr)
+	{
+		printf("Error al reservar memoria\n");
+		return (1);
+	}
+	i = 0;
+	while (i < 5)
+	{
+		printf("%d ", arr[i]);
+		i++;
+	}
+	printf("\n");
+	free(arr);
 	return (0);
-}*/
+}
