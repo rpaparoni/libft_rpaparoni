@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:20:00 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/12 13:35:04 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:24:33 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,9 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
 
 #include <stdio.h>
 
+/*
 void	main()
 {
 	char *s = "hola baby";
-	printf("%s");
-}
+	printf("%s\n", ft_substr(s, 6, 9));
+}*/
