@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/10 16:45:43 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:23:26 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ int		ft_memchr(const void *s, int c, int n);
 int		ft_memcmp(const void *s1, const void *s2, int n);
 int		ft_strnstr(const char *haystack, const char *needle, int len);
 void	*ft_calloc(size_t count, size_t size);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+
 
 #endif
