@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/12 12:23:26 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/13 13:14:58 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 size_t	ft_strlen(const char *s);
 int		ft_strlcpy(char *dst, const char *src, int dstsize);
-int		ft_strlcat(char *dst, const char *src, int dstsize);
+int		ft_strlcat(char *dst, const char *src, unsigned int dstsize);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -40,6 +40,7 @@ int		ft_memcmp(const void *s1, const void *s2, int n);
 int		ft_strnstr(const char *haystack, const char *needle, int len);
 void	*ft_calloc(size_t count, size_t size);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(const char *s1, const char *s2);
 
 
 #endif
