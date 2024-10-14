@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:29 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 14:49:20 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:02:28 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,18 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd (n / 10, fd);
 		ft_putnbr_fd (n % 10, fd);
 	}
+	else
+	{
+		ft_putchar_fd (n + '0', fd);
+	}
 }
+
+/*
+int main()
+{
+	int fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
+
+	ft_putnbr_fd(42, fd);
+	close(fd);
+	return (0);
+}*/
