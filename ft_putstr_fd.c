@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:16:45 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 14:24:17 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:15:34 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,21 @@
 
 void ft_putstr_fd(char *s, int fd)
 {
-	
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write (fd, &s[i], 1);
+		i++;
+	}
 }
+/*
+int main()
+{
+	int fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
+
+	ft_putstr_fd("hola nena", fd);
+	close(fd);
+	return (0);
+}*/
