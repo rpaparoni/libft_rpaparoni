@@ -6,38 +6,49 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:28 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/03 13:34:38 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:16:49 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memmove(void *dst, const void *src, int len)
+void *ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*ptr_dst;
-	unsigned char	*ptr_src;
-	unsigned char	*tmp;
-	int				i;
+    unsigned char *ptr_dst;
+    const unsigned char *ptr_src;
+    unsigned char *tmp;
+    size_t i;
 
-	ptr_dst = (unsigned char *)dst;
-	ptr_src = (unsigned char *)src;
-	i = 0;
-	while (i < len)
-	{
-		tmp[i] = ptr_src[i];
-		i++;
-	}
-	if(i == len)
-	{
-		i = 0;
-		while (i < len)
-		{
-			ptr_dst[i] = tmp[i];
-			i++;
-		}
-	}
-	return (0);
+    // Asignar memoria temporal para el buffer
+    tmp = (unsigned char *)malloc(len * sizeof(unsigned char));
+    if (tmp == NULL)
+        return (NULL);  // Si malloc falla, devolver NULL
+
+    ptr_dst = (unsigned char *)dst;
+    ptr_src = (const unsigned char *)src;
+
+    // Copiar src a tmp (buffer temporal)
+    i = 0;
+    while (i < len)
+    {
+        tmp[i] = ptr_src[i];
+        i++;
+    }
+
+    // Copiar desde tmp a dst (buffer temporal a destino)
+    i = 0;
+    while (i < len)
+    {
+        ptr_dst[i] = tmp[i];
+        i++;
+    }
+
+    // Liberar memoria temporal
+    free(tmp);
+
+    return (dst);  // Devolver el puntero al destino
 }
+
 /*
 #include <stdio.h>
 #include <string.h>
