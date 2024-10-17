@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:11 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/17 13:49:48 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:10:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	len = ft_counter(n);
-	str = malloc(sizeof(char) * (len + 1));
+	str = malloc(len + 1);
 	if (!str)
 		return (0);
 	str[len--] = '\0';
