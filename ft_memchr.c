@@ -6,13 +6,13 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:21 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/07 17:19:59 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:13:33 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memchr(const void *s, int c, int n)
+int	ft_memchr(const void *s, int c, int n)
 {
 	unsigned char	*ptr;
 	int				i;

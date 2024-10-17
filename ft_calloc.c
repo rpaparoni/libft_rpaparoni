@@ -6,14 +6,14 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:54:53 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/10 16:35:58 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:08:15 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
@@ -23,7 +23,7 @@ void *ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -46,4 +46,4 @@ int main()
 	printf("\n");
 	free(arr);
 	return (0);
-}
+}*/

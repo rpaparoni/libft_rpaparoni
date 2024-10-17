@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:23:01 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/30 14:13:15 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:11:37 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,13 @@ int	ft_isalpha(int c)
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 		return (1);
-	} else {
+	}
+	else
+	{
 		return (0);
 	}
 }
+
 /*
 #include <unistd.h>
 int main()

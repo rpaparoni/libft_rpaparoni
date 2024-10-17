@@ -6,16 +6,16 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:05 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/10 15:09:50 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:07:27 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_bzero(void *s, int n)
+int	ft_bzero(void *s, int n)
 {
-	int i;
-	char *ptr;
+	int		i;
+	char	*ptr;
 
 	i = 0;
 	ptr = (char *)s;

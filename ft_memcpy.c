@@ -6,13 +6,13 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:24 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/04 16:33:19 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:14:20 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcpy(void *dst, const void *src, int n)
+int	ft_memcpy(void *dst, const void *src, int n)
 {
 	unsigned char	*ptr_dst;
 	unsigned char	*ptr_src;
