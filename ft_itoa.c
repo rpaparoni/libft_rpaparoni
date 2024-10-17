@@ -6,15 +6,68 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:11 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/17 12:18:20 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:49:48 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+static int	ft_counter(int n)
 {
-	const char 	*s;
+	int	count;
 
-
+	count = 0;
+	if (n == 0)
+		return (1);
+	if (n != 0)
+	{
+		if (n < 0)
+		{
+			count++;
+			n = -n;
+		}
+		while (n != 0)
+		{
+			n = n / 10;
+			count++;
+		}
+	}
+	return (count);
 }
+
+char	*ft_itoa(int n)
+{
+	size_t	len;
+	char	*str;
+	long	nbr;
+
+	nbr = n;
+	len = ft_counter(n);
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (0);
+	str[len--] = '\0';
+	if (nbr == 0)
+		str[0] = '0';
+	if (nbr < 0)
+	{
+		str[0] = '-';
+		nbr = -nbr;
+	}
+	while (nbr > 0)
+	{
+		str[len--] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
+	return (str);
+}
+
+/*
+#include <stdio.h>
+
+int main()
+{
+	int	numerito = 4242;
+	printf("%s\n", ft_itoa(numerito));
+	return(0);
+}*/
