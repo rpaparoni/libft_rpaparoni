@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/21 14:42:42 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:01:42 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,14 +63,20 @@ char **ft_split(char const *s, char c)
 	int j;
 	int start = -1;
 
+	i = 0;
+	j = 0;
+
 	char **split = (char **)malloc((counter(s, c) + 1));
 	if (!split)
 		return (NULL);
 	while (s[i])
+	{
 		if (s[i] != c && start < 0)
 			start = i;
-		else if ((s[i] == c || !s[i]) && start >= 0)
+		else if ((s[i] == c || s[i + 1] == '\0') && start >= 0)
 		{
+			if (s[i + 1] == '\0' && s[i] != c)
+			i++;
 			split[j] = duplicate(s, start, i);
 			if (!split[j])
 			{
@@ -80,8 +86,10 @@ char **ft_split(char const *s, char c)
 			j++;
 			start = -1;
 		}
-		else
-			i++;
+		i++;
+	}
+		split[j] = NULL;
+		return (split);
 }
 
 #include <stdio.h>
@@ -96,5 +104,12 @@ int main()
 		printf("%s\n", split[i]);
 		i++;
 	}
+	return (0);
+
+	i = 0;
+	while (split[i])
+		free(split[i++]);
+	free(split);
+
 	return (0);
 }
