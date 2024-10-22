@@ -26,7 +26,7 @@ $(NAME) : $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@                        
+	$(CC) $(CFLAGS) $(INCLUDE) -c                       
 
 clean:                                                                          
 	$(RM) $(OBJECTS)
