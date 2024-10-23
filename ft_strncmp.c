@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:10 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/09 15:09:42 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:36:52 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 
 int	main()
@@ -47,4 +48,4 @@ int	main()
 				str3, 12)); // Diferente
 
 	return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:14 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/22 17:16:01 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:35:31 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
+/*
 #include <stdio.h>
 
 int main()
@@ -49,4 +50,4 @@ int main()
     t = ft_strnstr(big, little, len);
     printf("Resutl: %s\n", t);
     return 0;
-}
+}*/

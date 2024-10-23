@@ -6,28 +6,29 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:36 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/02 14:20:53 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:19:39 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	ft_memset(void *b, int c, int len)
+void	*ft_memset(void *ptr, int c, size_t len)
 {
-	unsigned char	*ptr;
-	int				i;
+	unsigned char	*s;
+	size_t	i;
 
-	ptr = (unsigned char *)b;
+	s = (unsigned char *)ptr;
 	i = 0;
 	while (i < len)
 	{
-		ptr[i] = (unsigned char)c;
+		s[i] = (unsigned char)c;
 		i++;
 	}
-	return (0);
+	return (ptr);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char buffer1[20]; // Crear un buffer de 20 bytes

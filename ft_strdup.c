@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:42:08 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/10 17:49:06 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:34:26 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char *ft_strdup(const char *s)
 	str[i] = 0;
 	return (str);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -42,4 +42,4 @@ int main()
 	printf("%s\n", str);
 	free(str);
 	return (0);
-}
+}*/

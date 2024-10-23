@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:18:28 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 14:05:41 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:38:06 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char *ft_strtrim(const char *s1, const char *set)
 	return (ft_substr(s1, start, end - start));
 }
 
+/*
 #include <stdio.h>
 
 int main()
@@ -47,4 +48,4 @@ int main()
 	printf("%s\n", str);
 	free(str);
 	return (0);
-}
+}*/

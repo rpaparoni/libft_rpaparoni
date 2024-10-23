@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/22 15:01:42 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:34:29 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,7 @@ char **ft_split(char const *s, char c)
 		return (split);
 }
 
+/*
 #include <stdio.h>
 
 int main()
@@ -112,4 +113,4 @@ int main()
 	free(split);
 
 	return (0);
-}
+}*/
