@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/23 13:34:29 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:15:51 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,29 +22,32 @@ static void	free_split(char **split, int j)
 static int counter(char const *s, char c)
 {
 	int count;
+	int in_word;
 
 	count = 0;
 	while (*s)
 	{
-		if (*s != c)
+		if (*s != c && !in_word)
 		{
+			in_word = 1;
 			count++;
-			while (*s && *s != c)
-				s++;
 		}
-		else
+		else if (*s == c)
+		{
+			in_word = 0;
 			s++;
+		}
 	}
 	return (count);
 
 }
 
-static char *duplicate(const char *s, int start, int end)
+static char	*create_word(const char *s, int start, int end)
 {
 	char *word;
 	int i;
 
-	word = (char *)malloc(end - start + 1);
+	word = (char *)malloc((end - start + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
 	i = 0;	
@@ -54,42 +57,47 @@ static char *duplicate(const char *s, int start, int end)
 	return (word);
 }
 
-char **ft_split(char const *s, char c)
+static int	fill_split(char **split, const char *s, char c)
 {
-	if(!s)
-		return (NULL);
+	int i = 0, j = 0, start = -1;
 
-	int i;
-	int j;
-	int start = -1;
-
-	i = 0;
-	j = 0;
-
-	char **split = (char **)malloc((counter(s, c) + 1));
-	if (!split)
-		return (NULL);
 	while (s[i])
 	{
-		if (s[i] != c && start < 0)
+		if (s[i] != c && start == -1)
 			start = i;
-		else if ((s[i] == c || s[i + 1] == '\0') && start >= 0)
+		else if ((s[i] == c || s[i + 1] == '\0') && start != -1)
 		{
-			if (s[i + 1] == '\0' && s[i] != c)
-			i++;
-			split[j] = duplicate(s, start, i);
-			if (!split[j])
-			{
-				free_split(split, j - 1);
-				return (NULL);
-			}
-			j++;
+			if (s[i] == c)
+				split[j] = create_word(s, start, i);
+			else
+				split[j] = create_word(s, start, i + 1);
+			if (!split[j++])
+				return (-1);
 			start = -1;
 		}
 		i++;
 	}
-		split[j] = NULL;
-		return (split);
+	split[j] = NULL;
+	return (0);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char **split;
+
+	if (!s)
+		return (NULL);
+
+	split = (char **)malloc((counter(s, c) + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+	if (fill_split(split, s, c) == -1)
+	{
+		free_split(split, counter(s, c) - 1);
+		return (NULL);
+	}
+
+	return (split);
 }
 
 /*
@@ -97,7 +105,7 @@ char **ft_split(char const *s, char c)
 
 int main()
 {
-	char *s = "Hello World!";
+	char *s = "qlq manin todo bien?";
 	char **split = ft_split(s, ' ');
 	int i = 0;
 	while (split[i])
