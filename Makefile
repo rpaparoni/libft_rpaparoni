@@ -13,12 +13,12 @@ SOURCES = ft_atoi.c ft_bzero.c ft_isalnum.c \
           ft_putnbr_fd.c ft_calloc.c ft_strdup.c \
 		  ft_substr.c \
 
-OBJECTS = $(SOURCES:.c=.o)                                                  
-                                                                                 
-CC = gcc                                                                         
-CFLAGS = -Wall -Wextra -Werror                                           
-INCLUDE = -I include                                                            
-RM = rm -rf                                                                     
+OBJECTS = $(SOURCES:.c=.o)
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+INCLUDE = -I include
+RM = rm -rf                                                     
 
 all: $(NAME)
 
@@ -26,11 +26,11 @@ $(NAME) : $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@              
+	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:                                                                          
 	$(RM) $(OBJECTS)
-		
+
 fclean: clean
 	$(RM) $(NAME)
 

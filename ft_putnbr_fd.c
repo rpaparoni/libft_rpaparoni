@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:29 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 15:37:41 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 15:33:22 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd ('-', fd);
 		ft_putchar_fd ('2', fd);
 		ft_putnbr_fd (147483648, fd);
+		return;
 	}
 	if (n < 0)
 	{
@@ -37,6 +38,8 @@ void ft_putnbr_fd(int n, int fd)
 }
 
 /*
+include <fcntl.h>
+
 int main()
 {
 	int fd = open("test.txt", O_WRONLY | O_CREAT, 0644);

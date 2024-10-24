@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:19 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 15:07:44 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 15:33:45 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 /*
+include <fcntl.h>
+
 int main()
 {
 	int fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
