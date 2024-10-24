@@ -6,13 +6,13 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:42:08 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 17:08:54 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:25:09 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*mem;
 	size_t	size;

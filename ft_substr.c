@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:20:00 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 18:04:01 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 20:04:19 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	size = ft_strlen(s);
 	if (start >= size)
-		return ("");
+		return (ft_strdup(""));
 	if ((size - start) < len)
 		len = size - start;
 	str = (char *)malloc(len + 1);
-	if (str == NULL)
+	if (!str)
 		return (NULL);
 	i = 0;
 	while (i < len)
