@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:00:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/14 15:39:34 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:58:37 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_atoi(const char *str)
 	int	result;
 
 	result = 0;
-	while (*str == ' ')
+	while (*str == ' ' || )
 	{
 		str++;
 	}
