@@ -6,34 +6,32 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:19 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/09 14:40:55 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 16:09:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
+	char	*last_occurrence;
 
 	i = 0;
-	while (str[i] != '\0')
+	last_occurrence = NULL;
+	while (s[i] != '\0')
 	{
+		if (s[i] == (unsigned char)c)
+			last_occurrence = (char *)&s[i];
 		i++;
 	}
-	i += 1;
-	while (i != 0)
-	{
-		if (str[i] == c)
-		{
-			return ((char *)&str[i]);
-		}
-		i--;
-	}
-	return (0);
+	if ((unsigned char)c == '\0')
+		return ((char *)&s[i]);
+	return (last_occurrence);
 }
-
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	const char *texto = "hola adios hola";

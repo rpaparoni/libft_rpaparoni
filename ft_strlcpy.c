@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:01 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 15:07:33 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 15:46:40 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	size_src;
 
 	i = 0;
-	size_src = strlen(src);
+	size_src = ft_strlen(src);
 	if (size == 0)
 		return (size_src);
 	while (src[i] && i < size - 1)

@@ -6,40 +6,41 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:20:00 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/12 14:24:33 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:05:54 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
+#include <stdlib.h>
 
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
+	size_t	i;
+	size_t	size;
 	char	*str;
-	size_t i;
 
-	if (!s)
-		return (NULL);
-	if (start > ft_strlen(s))
-		len = 0;
-	if (ft_strlen(s) < len)
-		len = ft_strlen(s);
-	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!str)
+	size = ft_strlen(s);
+	if (start >= size)
+		return ("");
+	if ((size - start) < len)
+		len = size - start;
+	str = (char *)malloc(len + 1);
+	if (str == NULL)
 		return (NULL);
 	i = 0;
 	while (i < len)
 	{
-		str[i] = s[i + start];
+		str[i] = s[start + i];
 		i++;
 	}
 	str[i] = '\0';
 	return (str);
 }
 
+/*
 #include <stdio.h>
 
-/*
 void	main()
 {
 	char *s = "hola baby";

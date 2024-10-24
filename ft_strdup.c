@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:42:08 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/23 13:34:26 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:08:54 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,14 @@
 
 char *ft_strdup(const char *s)
 {
-	char *str;
-	int i;
+	char	*mem;
+	size_t	size;
 
-	i = 0;
-	while (s[i])
-		i++;
-	str = malloc(i + 1);
-	if (!str)
-		return (0);
-	i = 0;
-	while (s[i])
-	{
-		str[i] = s[i];
-		i++;
-	}
-	str[i] = 0;
-	return (str);
+	size = ft_strlen(s) + 1;
+	mem = (char *)malloc(size);
+	if (mem != NULL)
+		ft_strlcpy(mem, s, size);
+	return (mem);
 }
 /*
 #include <stdio.h>
