@@ -6,13 +6,12 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:20:00 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 17:05:54 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:04:01 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
