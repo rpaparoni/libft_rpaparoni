@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:24 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/25 23:53:31 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 00:32:15 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*ptr_dst;
-	unsigned char	*ptr_src;
+	const unsigned char	*ptr_src;
 	size_t			i;
 
 	ptr_dst = (unsigned char *)dst;
