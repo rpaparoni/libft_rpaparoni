@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:48 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 16:15:21 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 00:28:18 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	if (!s && !c)
-	{
-		return (NULL);
-	}
 	while (s[i] != '\0')
 	{
 		if (s[i] == (unsigned char)c)
