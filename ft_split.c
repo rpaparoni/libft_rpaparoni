@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 21:15:51 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/25 23:42:38 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,13 @@ static void	free_split(char **split, int j)
 	free(split);
 }
 
-static int counter(char const *s, char c)
+static int	counter(char const *s, char c)
 {
-	int count;
-	int in_word;
+	int	count;
+	int	in_word;
 
 	count = 0;
+	in_word = 0;
 	while (*s)
 	{
 		if (*s != c && !in_word)
@@ -33,71 +34,63 @@ static int counter(char const *s, char c)
 			count++;
 		}
 		else if (*s == c)
-		{
 			in_word = 0;
-			s++;
-		}
+		s++;
 	}
 	return (count);
-
 }
 
-static char	*create_word(const char *s, int start, int end)
+static int	split_len(const char *s, char c)
 {
-	char *word;
-	int i;
+	int	len;
 
-	word = (char *)malloc((end - start + 1) * sizeof(char));
-	if (!word)
-		return (NULL);
-	i = 0;	
-	while (start < end)
-		word[i++] = s[start++];
-	word[i] = '\0';
-	return (word);
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (len);
 }
 
-static int	fill_split(char **split, const char *s, char c)
+static char	**create_word(const char *s, char c, char **split)
 {
-	int i = 0, j = 0, start = -1;
+	int	i;
+	int	j;
+	int	len;
 
+	i = 0;
+	j = 0;
 	while (s[i])
 	{
-		if (s[i] != c && start == -1)
-			start = i;
-		else if ((s[i] == c || s[i + 1] == '\0') && start != -1)
+		if (s[i] != c)
 		{
-			if (s[i] == c)
-				split[j] = create_word(s, start, i);
-			else
-				split[j] = create_word(s, start, i + 1);
-			if (!split[j++])
-				return (-1);
-			start = -1;
+			len = split_len(s + i, c);
+			split[j] = (char *)malloc((len + 1) * sizeof(char));
+			if (!split[j])
+			{
+				free_split(split, j);
+				return (NULL);
+			}
+			ft_strlcpy(split[j], s + i, len + 1);
+			i += len;
+			j++;
 		}
-		i++;
+		else
+			i++;
 	}
-	split[j] = NULL;
-	return (0);
+	rreturn (split[j] = NULL, split);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char **split;
+	char	**split;
+	int		word;
 
 	if (!s)
 		return (NULL);
-
-	split = (char **)malloc((counter(s, c) + 1) * sizeof(char *));
+	word = counter(s, c);
+	split = (char **)malloc((word + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
-	if (fill_split(split, s, c) == -1)
-	{
-		free_split(split, counter(s, c) - 1);
-		return (NULL);
-	}
-
-	return (split);
+	return (create_word(s, c, split));
 }
 
 /*
