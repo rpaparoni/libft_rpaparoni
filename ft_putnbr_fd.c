@@ -6,20 +6,20 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:29 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 15:33:22 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/25 23:49:52 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
 		ft_putchar_fd ('-', fd);
 		ft_putchar_fd ('2', fd);
 		ft_putnbr_fd (147483648, fd);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{

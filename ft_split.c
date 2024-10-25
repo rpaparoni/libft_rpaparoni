@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/25 23:42:38 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 00:11:20 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static char	**create_word(const char *s, char c, char **split)
 		else
 			i++;
 	}
-	rreturn (split[j] = NULL, split);
+	return (split[j] = NULL, split);
 }
 
 char	**ft_split(char const *s, char c)

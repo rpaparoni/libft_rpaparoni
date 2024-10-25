@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:21 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 18:18:04 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/25 23:52:44 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
-	size_t	i;
+	size_t			i;
 
 	ptr = (unsigned char *)s;
 	i = 0;
