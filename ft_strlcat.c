@@ -6,13 +6,13 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:54 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/13 13:09:22 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/27 01:38:40 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
+size_t	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
 {
 	unsigned int	src_len;
 	unsigned int	dst_len;

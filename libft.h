@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:46:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 13:15:47 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/27 01:39:40 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-int		ft_strlcat(char *dst, const char *src, unsigned int dstsize);
+size_t	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
