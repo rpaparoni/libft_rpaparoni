@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:16:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 00:18:10 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:35:32 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int main(void)
 	char *modified;
 
 	modified = ft_strmapi(original, [](unsigned int i, char c) {
-		return (i % 2 == 0) ? c - 32 : c; // Mayúscula si el índice es par
+		return (i % 2 == 0) ? c - 32 : c;
 	});
 
 	if (modified == NULL)
@@ -51,6 +51,6 @@ int main(void)
 	printf("Cadena original: %s\n", original);
 	printf("Cadena modificada: %s\n", modified);
 
-	free(modified); // Liberamos la memoria asignada
+	free(modified);
 	return (0);
 }*/

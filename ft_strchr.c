@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:48 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 00:28:18 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 15:02:27 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int	main(void)
 	const char	*s;
 	int			c;
 
-	s[] = "hola wapo";
+	s = "hola wapo";
 	c = "w";
 	write(1, &*ft_strchr(*s, c),1);
-}
-*/
+}*/
+

@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:36 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/25 23:50:18 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:55:49 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,9 @@ void	*ft_memset(void *ptr, int c, size_t len)
 
 int	main(void)
 {
-	char buffer1[20]; // Crear un buffer de 20 bytes
+	char str[20];
 	ft_memset(buffer1, 'A', 10);
-	buffer1[10] = '\0';
-		// Asegurarse de agregar el carácter nulo al final para imprimir
-	// Mostrar el resultado de ft_memset
-	printf("Resultado de ft_memset: %s\n", buffer1);
+	str[10] = '\0';
+	printf("%s\n", str);
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:21 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 00:26:32 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:36:29 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 int	main(void)
 {
 	char *s = "hola wapo";
-	int c = 't';
-	int n = 10;
-	int result = ft_memchr(s, c, n) + '0';
-	write(1, &result, 1);
+	int c = 'w';
+	size_t n = 10;
+	char *result = ft_memchr(s, c, n);
+	if (result != NULL)
+		write(1, result, 1);
+	else
+		write(1, "Character not found\n", 20);
 	return (0);
 }*/
