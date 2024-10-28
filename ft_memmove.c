@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:28 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 13:48:27 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:14:30 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main(void)
-{
-    char src[] = "12345";
-    ft_memmove(src + 2, src, 3);
-    printf("Resultado: %s\n", src);  //"12123"
-    return 0;
-}*/

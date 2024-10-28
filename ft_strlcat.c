@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:54 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/27 01:38:40 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:15:21 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
 	}
 	return (dst_len + src_len);
 }
-/*
-int	main(void)
-{
-	char dst[10] = "Hello";
-	char src[10] = "World";
-	int dstsize = 10;
-
-	printf("Return: %d\n", ft_strlcat(dst, src, dstsize));
-	printf("dst: %s\n", dst);
-	return (0);
-}*/

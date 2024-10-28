@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:08:26 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 00:11:20 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:14:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,26 +92,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (create_word(s, c, split));
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	char *s = "qlq manin todo bien?";
-	char **split = ft_split(s, ' ');
-	int i = 0;
-	while (split[i])
-	{
-		printf("%s\n", split[i]);
-		i++;
-	}
-	return (0);
-
-	i = 0;
-	while (split[i])
-		free(split[i++]);
-	free(split);
-
-	return (0);
-}*/

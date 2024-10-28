@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:02:30 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/09/30 16:25:41 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:16:24 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ int	ft_toupper(int c)
 		return (c);
 	}
 }
-
-/*
-#include <unistd.h>
-int main()
-{	
-	int result = ft_toupper('a');
-	char c = result;
-	write(1, &c, 1);
-}
-*/

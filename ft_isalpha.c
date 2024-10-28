@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:23:01 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/17 17:11:37 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:13:36 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ int	ft_isalpha(int c)
 		return (0);
 	}
 }
-
-/*
-#include <unistd.h>
-int main()
-{	
-	int result = ft_isalpha('a');
-	char c = result + '0';
-	write(1, &c, 1);
-}*/

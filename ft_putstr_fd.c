@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:16:45 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/24 18:07:05 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:14:54 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-/*
-include <fcntl.h>
-
-int main()
-{
-	int fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
-
-	ft_putstr_fd("hola nena", fd);
-	close(fd);
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:15:11 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/17 16:10:59 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:14:09 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	int	numerito = 4242;
-	printf("%s\n", ft_itoa(numerito));
-	return(0);
-}*/

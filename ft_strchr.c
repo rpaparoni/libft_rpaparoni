@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 12:01:48 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 15:15:05 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:15:04 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,4 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	const char	*s;
-	int			c;
 
-	s = "hola wapo";
-	c = "w";
-	write(1, &*ft_strchr(*s, c),1);
-}*/

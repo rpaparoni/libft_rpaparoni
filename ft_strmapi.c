@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:16:50 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/10/26 14:35:32 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:15:41 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,24 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-/*
-int main(void)
-{
-	char *original = "abcdefgh";
-	char *modified;
-
-	modified = ft_strmapi(original, [](unsigned int i, char c) {
-		return (i % 2 == 0) ? c - 32 : c;
-	});
-
-	if (modified == NULL)
-	{
-		printf("Error: memoria no asignada\n");
-		return (1);
-	}
-	printf("Cadena original: %s\n", original);
-	printf("Cadena modificada: %s\n", modified);
-
-	free(modified);
-	return (0);
-}*/
