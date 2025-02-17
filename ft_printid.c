@@ -6,11 +6,11 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:42:37 by rpaparon          #+#    #+#             */
-/*   Updated: 2025/01/06 15:52:41 by rpaparon         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:41:55 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static size_t	ft_intlen(int value)
 {

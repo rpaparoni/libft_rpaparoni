@@ -6,11 +6,11 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:43:49 by rpaparon          #+#    #+#             */
-/*   Updated: 2025/02/17 16:20:01 by rpaparon         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:43:10 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static int	ft_putchar(char c)
 {
