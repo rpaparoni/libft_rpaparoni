@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_printu.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 14:18:28 by rpaparon          #+#    #+#             */
-/*   Updated: 2025/02/17 14:20:16 by rpaparon         ###   ########.fr       */
+/*   Created: 2024/11/05 14:55:05 by rpaparon          #+#    #+#             */
+/*   Updated: 2024/11/08 14:50:42 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-char	*ft_strtrim(const char *s1, const char *set)
+void	ft_printu(unsigned int value, int *counter)
 {
-	size_t	start;
-	size_t	end;
-
-	if (!s1 || !set)
-		return (NULL);
-	start = 0;
-	end = ft_strlen(s1);
-	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
-	while (end > start && ft_strchr(set, s1[end - 1]))
-		end--;
-	return (ft_substr(s1, start, end - start));
+	if (value >= 10)
+		ft_printu(value / 10, counter);
+	ft_putchar_fd(value % 10 + '0', 1);
+	(*counter)++;
 }

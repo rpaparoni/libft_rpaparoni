@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_printid.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 14:18:28 by rpaparon          #+#    #+#             */
-/*   Updated: 2025/02/17 14:20:16 by rpaparon         ###   ########.fr       */
+/*   Created: 2024/11/05 12:42:37 by rpaparon          #+#    #+#             */
+/*   Updated: 2025/01/06 15:52:41 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-char	*ft_strtrim(const char *s1, const char *set)
+static size_t	ft_intlen(int value)
 {
-	size_t	start;
-	size_t	end;
+	size_t	len;
 
-	if (!s1 || !set)
-		return (NULL);
-	start = 0;
-	end = ft_strlen(s1);
-	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
-	while (end > start && ft_strchr(set, s1[end - 1]))
-		end--;
-	return (ft_substr(s1, start, end - start));
+	len = 0;
+	if (value <= 0)
+		len++;
+	while (value)
+	{
+		len++;
+		value /= 10;
+	}
+	return (len);
+}
+
+void	ft_printid(int value, int *counter)
+{
+	ft_putnbr_fd(value, 1);
+	(*counter) += ft_intlen(value);
 }
