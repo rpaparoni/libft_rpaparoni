@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:43:49 by rpaparon          #+#    #+#             */
-/*   Updated: 2025/02/17 16:43:10 by rpaparon         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:48:10 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,3 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (counter);
 }
-
-/*
-int main() {
-    char *message = "hola pato%";
-    ft_printf("Characters printed: %s\n", message);
-    return 0;
-}*/
