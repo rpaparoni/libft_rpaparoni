@@ -12,8 +12,8 @@ SOURCES = ft_atoi.c ft_bzero.c ft_isalnum.c \
           ft_putstr_fd.c ft_putendl_fd.c \
           ft_putnbr_fd.c ft_calloc.c ft_strdup.c \
 		  ft_substr.c \
-          ft_printf.c ft_printhex.c ft_printid\
-          ft_printid ft_printu.c ft_printp.c \
+          ft_printf.c ft_printhex.c ft_printid.c\
+          ft_printu.c ft_printp.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 
